@@ -193,7 +193,13 @@ function App() {
           {paginatedProducts.map((product) => (
             <div className="card" key={product.id}>
               <div className="card-img-wrap">
-                <img src={product.image} alt={product.title} />
+            <img
+  src={product.image}
+  alt={product.title}
+  onError={(e) => {
+    e.target.src = "https://via.placeholder.com/150?text=No+Image";
+  }}
+/>
               </div>
 
               <h3>{product.title}</h3>

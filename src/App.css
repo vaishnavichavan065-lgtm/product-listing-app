@@ -225,10 +225,10 @@ body {
 }
 
 .sort-select {
-  padding: 12px 24px;
+  padding: 12px 48px 12px 24px;
   border: 1.5px solid rgba(124, 58, 237, 0.15);
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
   color: var(--text-h);
   font-size: 14px;
@@ -237,6 +237,18 @@ body {
   outline: none;
   transition: all 0.3s;
   box-shadow: var(--shadow-sm);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237c3aed' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 16px;
+}
+
+.sort-select:hover,
+.sort-select:focus {
+  border-color: var(--accent-1);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
 }
 
 .sort-select:hover,
